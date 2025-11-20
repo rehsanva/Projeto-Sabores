@@ -1,0 +1,304 @@
+ * {
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     background-color: #B00020;
+     height: 100vh;
+     background-attachment: fixed;
+     color: #f5eaea;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     padding-top: 70px;
+ }
+
+ nav {
+     z-index: 1000;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     background-color: #0B6623;
+     color: white;
+     padding: 0 10px;
+ }
+
+ nav ul {
+     display: flex;
+     gap: 40px;
+     justify-content: center;
+     align-items: center;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+
+ nav ul li a {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-decoration: none;
+     font-size: 25px;
+     color: white;
+     padding: 10px 20px;
+ }
+
+ nav a {
+     display: inline-block;
+     padding: 8px 20px;
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+     transition: 0.3s;
+ }
+
+ nav a.contato {
+     display: inline-block;
+     padding: 8px 20px;
+     text-decoration: none;
+     color: #0B6623;
+     /* Verde Escuro */
+     font-weight: bold;
+     transition: 0.3s;
+     background-color: #FFD700;
+     /* Dourado como botão de presente */
+     border-radius: 20px;
+ }
+
+ nav a.contato:hover {
+     background-color: #FFFACD;
+ }
+
+ main {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+
+
+ #inicio {
+     color: #ffffff;
+     padding: 40px;
+     text-align: left;
+     border-radius: 20px;
+     margin-top: 30px;
+ }
+
+ #inicio h1 {
+     color: #eefaf1;
+     font-size: 3.7em;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ #inicio p {
+     margin-top: 10px;
+     margin-bottom: 10px;
+     font-size: 30px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-align: justify;
+     ~line-height: 1.2;
+     margin-left: 20px;
+ }
+
+.inicio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.texto-inicio {
+    width: 55%;
+    text-align: left;
+}
+
+.imagem-inicio img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* --- 2. TÍTULOS DE SEÇÃO E LAYOUT DE CARDS (Figma) --- */
+
+ /* Título da Seção (Salgados, Doces) */
+ #salgados>h2,
+ #doces>h2 {
+     color: #F7DDE5;
+     /* Branco Suave para contraste no fundo Vermelho */
+     font-size: 2.5em;
+     margin-top: 50px;
+     margin-bottom: 30px;
+     text-align: center;
+     border-bottom: 4px solid #FFD700;
+     /* Linha Dourada */
+     padding-bottom: 10px;
+ }
+
+ /* ** CRUCIAL: LAYOUT DE CARDS LADO A LADO ** */
+ #salgados,
+ #doces {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     justify-content: flex-start;
+     padding-top: 0;
+ }
+
+ /* --- 3. ESTILO DO CARD DE RECEITA (Figma + Natal) --- */
+
+ article {
+     background-color: #F7DDE5;
+     /* Rosa Suave/Bege - Fundo do card */
+     color: #333;
+     /* Texto Escuro */
+     padding: 25px;
+     border-radius: 15px;
+     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+     transition: transform 0.3s;
+
+     /* Configuração para 3 colunas */
+     flex: 1 1 calc(33.33% - 20px);
+     min-width: 250px;
+
+     /* Borda sutil para dar um toque de presente */
+     border: 1px solid #B00020;
+ }
+
+ article:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+ }
+
+ /* Títulos dentro do Card */
+ article h2 {
+     color: #B00020;
+     /* Vermelho Escuro */
+     font-size: 1.6em;
+     margin-top: 0;
+     padding-bottom: 8px;
+     border-bottom: 2px solid #0B6623;
+     /* Linha Verde Escuro */
+     margin-bottom: 15px;
+     text-align: left;
+ }
+
+ /* Subtítulos (Ingredientes, Modo de Preparo) */
+ article h3 {
+     color: #0B6623;
+     /* Verde Escuro */
+     margin-top: 15px;
+     margin-bottom: 8px;
+     font-size: 1.2em;
+     border-left: 5px solid #FFD700;
+     /* Barra Dourada */
+     padding-left: 10px;
+ }
+
+ article p {
+     text-align: justify;
+     font-size: 0.95em;
+     margin-bottom: 15px;
+ }
+
+ /* --- 4. LISTAS E PASSOS DE PREPARO (Acentos Natalinos) --- */
+
+ ul,
+ ol {
+     padding-left: 20px;
+     list-style: none;
+     /* Remove list style padrão */
+ }
+
+ ul li {
+     margin-bottom: 5px;
+     font-size: 0.9em;
+     position: relative;
+     padding-left: 20px;
+ }
+
+ ul li::before {
+     content: '✨';
+     /* Brilho Dourado como marcador */
+     position: absolute;
+     left: 0;
+     color: #FFD700;
+     font-weight: bold;
+     font-size: 1.1em;
+ }
+
+ ol li {
+     margin-bottom: 8px;
+     font-size: 0.95em;
+     position: relative;
+     padding-left: 20px;
+ }
+
+ ol li::before {
+     /* Número do passo em Vermelho */
+     content: counter(section) ".";
+     counter-increment: section;
+     position: absolute;
+     left: 0;
+     color: #B00020;
+     font-weight: bold;
+     font-size: 1.1em;
+ }
+
+ /* Resetando o contador para cada nova lista ordenada */
+ #salgados,
+ #doces {
+     counter-reset: section;
+ }
+
+
+ /* --- 5. RESPONSIVIDADE (Para telas menores) --- */
+
+ @media (max-width: 1024px) {
+
+     /* 2 cards por linha em telas médias */
+     article {
+         flex: 1 1 calc(50% - 15px);
+         max-width: calc(50% - 15px);
+     }
+ }
+
+ @media (max-width: 768px) {
+
+     /* 1 card por linha em telas pequenas */
+     article {
+         flex: 1 1 100%;
+         max-width: 100%;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+     nav ul {
+         gap: 20px;
+     }
+
+     nav ul li a {
+         font-size: 20px;
+         padding: 8px 15px;
+     }
+ }
