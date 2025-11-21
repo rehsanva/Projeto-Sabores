@@ -125,23 +125,18 @@
     border-radius: 10px;
 }
 
+h1{
 
+     color: #eefaf1;
+     font-size: 3.7em;
+     margin-bottom: 20px;
+     text-align: center;
+ 
+} 
+h2{
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
- /* --- 2. TÍTULOS DE SEÇÃO E LAYOUT DE CARDS (Figma) --- */
-
- /* Título da Seção (Salgados, Doces) */
  #salgados>h2,
  #doces>h2 {
      color: #F7DDE5;
