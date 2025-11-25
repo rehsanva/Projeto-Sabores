@@ -117,17 +117,17 @@
 .texto-inicio {
     width: 70%;
     text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 
 .imagem-inicio img {
-    width: 100%;
-    display: flex;
-    max-width: 250px;
-    border-radius: 10px;
-    margin: auto 0;
-        height: auto; 
-        margin-right: 0;
+    width: 400px;
+    height: 500px;
+    display:flex;
+    max-width: 200px;
+    border-radius: 100px;
 }
 
 h1{
