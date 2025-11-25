@@ -139,18 +139,18 @@ nav a:focus {
 
  #inicio h1 {
     color: var(--accent);
-    font-size: 1.9em;
+    font-size: 3.9em;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
  }
 
  #inicio p {
     color: var(--muted);
     margin-top: 8px;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
+    text-align: justify;
     line-height: 1.5;
     margin-left: 0;
  }
@@ -165,19 +165,19 @@ nav a:focus {
 }
 
 .texto-inicio {
-    width: 60%;
+    width: 100%;
     text-align: left;
-    display: block;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
 }
 
 
 .imagem-inicio img {
-    height: auto;
-    display: block;
-    max-width: 220px;
-    width: 38%;
-    border-radius: 12px;
+    height: 500px;
+    display: flex;
+    max-width: 500px;
+    width: 500px;
+    border-radius: 10px;
 }
 
 h1{
